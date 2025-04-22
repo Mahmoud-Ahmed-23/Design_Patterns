@@ -9,16 +9,16 @@ namespace StrategyDP
 
 			RealDuck realDuck = new RealDuck();
 			realDuck.Display();
-			realDuck.Fly();
-			realDuck.Quack();
+			realDuck.Fly(() => Console.WriteLine("I'm flying with normal speed"));
+			realDuck.Quack(() => Console.WriteLine("Quack"));
 			realDuck.Swim();
 
 			Console.WriteLine("====================================");
 
 			RubberDuck rubberDuck = new RubberDuck();
 			rubberDuck.Display();
-			rubberDuck.Fly();
-			rubberDuck.Quack();
+			rubberDuck.Fly(() => Console.WriteLine("I can't fly"));
+			rubberDuck.Quack(() => Console.WriteLine("Squeak"));
 			rubberDuck.Swim();
 
 			Console.WriteLine("====================================");
@@ -26,8 +26,8 @@ namespace StrategyDP
 
 			realDuck.FlyBehaviour = new FlyWithRocketPower();
 			realDuck.QuackBehaviour = new NormalQuack();
-			realDuck.Fly();
-			realDuck.Quack();
+			realDuck.Fly(() => Console.WriteLine("I'm flying with rocket power"));
+			realDuck.Quack(() => Console.WriteLine("Quack"));
 		}
 	}
 }

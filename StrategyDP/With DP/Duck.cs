@@ -18,9 +18,9 @@ namespace StrategyDP.With_DP
 			FlyBehaviour = flyBehaviour;
 			QuackBehaviour = quackBehaviour;
 		}
-		public void Quack()
+		public void Quack(Action quackAction)
 		{
-			QuackBehaviour.Quack();
+			quackAction.Invoke();
 		}
 
 		public void Swim()
@@ -28,9 +28,9 @@ namespace StrategyDP.With_DP
 			Console.WriteLine("All ducks float, even decoys!");
 		}
 
-		public void Fly()
+		public void Fly(Action flyAction)
 		{
-			FlyBehaviour.Fly();
+			flyAction.Invoke();
 		}
 
 	}
