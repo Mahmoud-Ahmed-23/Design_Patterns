@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletoneDP", "..\Singleto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyDP", "StrategyDP\StrategyDP.csproj", "{AA7DD156-4E75-4429-AF40-5506A8FC910A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorDP", "DecoratorDP\DecoratorDP.csproj", "{FD4D9A0C-4B8D-46EB-BB0D-B061F059209E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AA7DD156-4E75-4429-AF40-5506A8FC910A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA7DD156-4E75-4429-AF40-5506A8FC910A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA7DD156-4E75-4429-AF40-5506A8FC910A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD4D9A0C-4B8D-46EB-BB0D-B061F059209E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD4D9A0C-4B8D-46EB-BB0D-B061F059209E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD4D9A0C-4B8D-46EB-BB0D-B061F059209E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD4D9A0C-4B8D-46EB-BB0D-B061F059209E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
